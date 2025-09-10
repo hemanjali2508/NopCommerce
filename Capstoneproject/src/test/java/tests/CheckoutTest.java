@@ -1,39 +1,43 @@
 package tests;
 
-import org.testng.annotations.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import core.BaseTest;
+import pages.CartPage;
 import pages.CheckoutPage;
-import org.openqa.selenium.By;
+import pages.HomePage;
+import pages.LoginPage;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class CheckoutTest {
-    WebDriver driver;
-
-    @BeforeMethod
-    public void setup() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://demo.nopcommerce.com/");
-    }
+public class CheckoutTest extends BaseTest {
 
     @Test
-    public void testCheckout() {
-        // Add a product to the cart first
-        driver.findElement(By.xpath("(//button[contains(text(),'Add to cart')])[1]")).click();
+    public void cartTest() throws InterruptedException {
+    	 // Step 1: Go to Login Page
+        HomePage homePage = new HomePage(driver);
+        homePage.clickLogin();
+   
+        // Step 2: Login with valid credentials
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.enterEmail("hemanjalimuli@gmail.com");   // change with a valid user
+        loginPage.enterPassword("123123123");       // change with the right password
+        loginPage.clickLogin();
+        
+        // Verify login
+        Assert.assertTrue(loginPage.isLoginSuccessful(), "Login failed!");
+        System.out.println("Login successful");
 
+       //open cart page
+        
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickOpenCart();
+        cartPage.clikAcceptTerm();
+        cartPage.proceedToCheckout();
+        System.out.println("Navigated to cart and proceeding to checkout");    
+        
+        //checkout process
+        
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        checkoutPage.proceedToCheckout();
-
-        // Assert: verify checkout page is opened
-        Assert.assertTrue(driver.getCurrentUrl().contains("checkout"), 
-                "Checkout page not opened");
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        checkoutPage.proceedThroughCheckout();
+        
     }
 }

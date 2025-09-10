@@ -4,19 +4,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
-    WebDriver driver;
-
-    By loginLink = By.className("ico-login");
+    private WebDriver driver;
+    private By loginLink = By.className("ico-login");
+    private By registerLink = By.className("ico-register");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void clickLoginLink() {
+    public void clickLogin() {
         driver.findElement(loginLink).click();
     }
 
-    public String getPageTitle() {
-        return driver.getTitle();
+    public void clickRegister() {
+        driver.findElement(registerLink).click();
     }
 }

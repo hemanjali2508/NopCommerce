@@ -2,32 +2,38 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class CheckoutPage {
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
 
-    By shoppingCartLink = By.linkText("Shopping cart");
-    By termsOfService = By.xpath("//input[id='termsofservice']");
-    By checkoutButton = By.id("checkout");
+    // Locators
+    private By addressBiilingBtn = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[1]/div[2]/div/button[2]");
+    private By shippingMethodBtn = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[3]/div[2]/form/div[2]/button");
+    private By paymentMethodBtn = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[4]/div[2]/div/button");
+    private By paymentInfoBtn = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[5]/div[2]/div/button");
+    private By ConfirmOrderBtn = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/ol/li[6]/div[2]/div[2]/button");
+    //private By OderDetailsBtn  = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a");
+    
 
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void proceedToCheckout() {
-        // Go to shopping cart
-        wait.until(ExpectedConditions.elementToBeClickable(shoppingCartLink)).click();
+    public void proceedThroughCheckout() throws InterruptedException {
+        driver.findElement(addressBiilingBtn).click();
+        Thread.sleep(5000);
 
-        // Accept terms of service
-        wait.until(ExpectedConditions.elementToBeClickable(termsOfService)).click();
+        driver.findElement(shippingMethodBtn).click();
+        Thread.sleep(5000);
+        
+        driver.findElement(paymentMethodBtn).click();
+        Thread.sleep(5000);
 
-        // Click checkout
-        wait.until(ExpectedConditions.elementToBeClickable(checkoutButton)).click();
+        driver.findElement(paymentInfoBtn).click();
+        Thread.sleep(5000);
+
+        driver.findElement(ConfirmOrderBtn).click();
+        Thread.sleep(5000);
+        
     }
 }
