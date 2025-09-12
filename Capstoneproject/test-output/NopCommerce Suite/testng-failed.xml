@@ -16,15 +16,6 @@
   </test> <!-- E2E Tests(failed) -->
   <test thread-count="5" name="Functional Tests(failed)">
     <classes>
-      <class name="tests.CartTest">
-        <methods>
-          <include name="setupReport"/>
-          <include name="tearDownReport"/>
-          <include name="setUp"/>
-          <include name="cartTest"/>
-          <include name="logResult"/>
-        </methods>
-      </class> <!-- tests.CartTest -->
       <class name="tests.ProductSearchTest">
         <methods>
           <include name="setupReport"/>
@@ -34,24 +25,6 @@
           <include name="logResult"/>
         </methods>
       </class> <!-- tests.ProductSearchTest -->
-      <class name="tests.ChangePasswordTest">
-        <methods>
-          <include name="setupReport"/>
-          <include name="tearDownReport"/>
-          <include name="PasswordTest"/>
-          <include name="setUp"/>
-          <include name="logResult"/>
-        </methods>
-      </class> <!-- tests.ChangePasswordTest -->
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="setupReport"/>
-          <include name="tearDownReport"/>
-          <include name="setUp"/>
-          <include name="loginTestValidCredentials"/>
-          <include name="logResult"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
       <class name="tests.CheckoutTest">
         <methods>
           <include name="setupReport"/>
@@ -61,6 +34,24 @@
           <include name="cartTest"/>
         </methods>
       </class> <!-- tests.CheckoutTest -->
+      <class name="tests.CartTest">
+        <methods>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+          <include name="setUp"/>
+          <include name="cartTest"/>
+          <include name="logResult"/>
+        </methods>
+      </class> <!-- tests.CartTest -->
+      <class name="tests.ChangePasswordTest">
+        <methods>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+          <include name="PasswordTest"/>
+          <include name="setUp"/>
+          <include name="logResult"/>
+        </methods>
+      </class> <!-- tests.ChangePasswordTest -->
       <class name="tests.AddressTest">
         <methods>
           <include name="setupReport"/>
@@ -70,6 +61,15 @@
           <include name="logResult"/>
         </methods>
       </class> <!-- tests.AddressTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+          <include name="setUp"/>
+          <include name="loginTestValidCredentials"/>
+          <include name="logResult"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Functional Tests(failed) -->
 </suite> <!-- Failed suite [NopCommerce Suite] -->

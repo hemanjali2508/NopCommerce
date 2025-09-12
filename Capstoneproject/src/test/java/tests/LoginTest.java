@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends BaseTest {
 
 	@Test
-	public void loginTestValidCredentials() throws InterruptedException {
+	public void loginTestValidCredentials1() throws InterruptedException {
 		// Go to login page
 		HomePage home = new HomePage(driver);
 		home.clickLogin();
@@ -31,50 +31,29 @@ public class LoginTest extends BaseTest {
 	}
 
 	@Test
-	public void loginTestInvalidEmail() throws InterruptedException {
-	    // Go to login page
-	    HomePage home = new HomePage(driver);
-	    home.clickLogin();
-
-	    LoginPage login = new LoginPage(driver);
-	    login.enterEmail("Invalid@gmail.com");
-	    login.enterPassword("wrongPassword123");
-	    login.clickLogin();
-
-	    // Check login result
-	    if (!login.isLoginSuccessful()) {
-	        String errorMsg = login.getLoginErrorMessage();
-	        System.out.println("Login failed as expected. Error: " + errorMsg);
-	        Assert.assertTrue(errorMsg.contains("Login was unsuccessful"), 
-	                          "Expected login failure but got: " + errorMsg);
-	    } else {
-	        System.out.println("Login unexpectedly succeeded!");
-	        Assert.fail("Login succeeded with invalid credentials!");
-	    }
-	}
-	
-	@Test
-	public void loginTestInvalidPassword() throws InterruptedException {
-	    // Go to login page
-	    HomePage home = new HomePage(driver);
-	    home.clickLogin();
-
+	public void loginTestValidCredentials() throws InterruptedException {
 	    LoginPage login = new LoginPage(driver);
 	    login.enterEmail("hemanjalimuli@gmail.com");
-	    login.enterPassword("1");
+	    login.enterPassword("123123123");
 	    login.clickLogin();
 
-	    // Check login result
-	    if (!login.isLoginSuccessful()) {
-	        String errorMsg = login.getLoginErrorMessage();
-	        System.out.println("Login failed as expected. Error: " + errorMsg);
-	        Assert.assertTrue(errorMsg.contains("Login was unsuccessful"), 
-	                          "Expected login failure but got: " + errorMsg);
-	    } else {
-	        System.out.println("Login unexpectedly succeeded!");
-	        Assert.fail("Login succeeded with invalid credentials!");
-	    }
+	    Assert.assertTrue(login.isLoginSuccessful(), "Expected login to succeed!");
 	}
+
+	    // Check login result
+	
+	@Test
+	public void loginTestInvalidEmail() {
+	    LoginPage login = new LoginPage(driver);
+	    login.enterEmail("Invalid@gmail.com");
+	    login.enterPassword("123123123");
+	    login.clickLogin();
+
+	    Assert.assertFalse(login.isLoginSuccessful(), "Login succeeded with invalid email!");
+	    Assert.assertTrue(login.getLoginErrorMessage().contains("Login was unsuccessful"));
+	}
+
+	    // Check login result
 
 	@Test
 	public void loginTestBlankCredentials() throws InterruptedException {
