@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.LoginTest">
+      <class name="com.testautomation.nopcommerce.runner.CucumberTestRunner">
         <methods>
-          <include name="setupReport"/>
-          <include name="tearDownReport"/>
-          <include name="setUp"/>
-          <include name="loginTestValidCredentials1"/>
-          <include name="logResult"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="3 11 14"/>
         </methods>
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- com.testautomation.nopcommerce.runner.CucumberTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

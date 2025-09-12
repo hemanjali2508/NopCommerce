@@ -1,88 +1,326 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="12" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-12T20:15:55 IST" name="Default suite" finished-at="2025-09-12T20:16:31 IST" duration-ms="36614">
+  <suite started-at="2025-09-12T20:57:56 IST" name="Default suite" finished-at="2025-09-12T21:00:12 IST" duration-ms="136524">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-12T20:15:55 IST" name="Default test" finished-at="2025-09-12T20:16:31 IST" duration-ms="36614">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@327514f]" started-at="2025-09-12T20:15:54 IST" name="setupReport" finished-at="2025-09-12T20:15:55 IST" duration-ms="1010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@327514f]" started-at="2025-09-12T20:15:55 IST" name="setUp" finished-at="2025-09-12T20:16:03 IST" duration-ms="8395" status="PASS">
+    <test started-at="2025-09-12T20:57:56 IST" name="Default test" finished-at="2025-09-12T21:00:12 IST" duration-ms="136524">
+      <class name="com.testautomation.nopcommerce.runner.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:57:56 IST" name="setUpClass" finished-at="2025-09-12T20:57:58 IST" duration-ms="1982" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.LoginTest.loginTestValidCredentials1() throws java.lang.InterruptedException]]>
+                <![CDATA[org.testng.TestRunner@23df7fad]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTestValidCredentials1()[pri:0, instance:tests.LoginTest@327514f]" started-at="2025-09-12T20:16:03 IST" name="loginTestValidCredentials1" finished-at="2025-09-12T20:16:31 IST" duration-ms="27704" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:57:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:19 IST" duration-ms="21466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a new user then login back"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register and Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:29 IST" duration-ms="9939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to Notebooks category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Catalog navigation and product details"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:39 IST" duration-ms="10156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open first product details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Catalog navigation and product details"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:46 IST" duration-ms="6488" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sort products by price Low to High"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Catalog navigation and product details"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Login failed: Login was unsuccessful. Please correct the errors and try again.
-No customer account found expected [false] but found [true]]]>
+              <![CDATA[Unresolved compilation problem: 
+var cannot be resolved to a type
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login failed: Login was unsuccessful. Please correct the errors and try again.
-No customer account found expected [false] but found [true]
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+var cannot be resolved to a type
+
+at com.testautomation.nopcommerce.pages.CatalogPage.sortBy(CatalogPage.java:29)
+at com.testautomation.nopcommerce.steps.CatalogSteps.i_sort_products_by(CatalogSteps.java:45)
+at ✽.I sort products by "Price: Low to High"(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/catalog_navigation.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:50 IST" duration-ms="4050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open Privacy notice page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Footer links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:55 IST" duration-ms="5018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open Sitemap page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Footer links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:58:59 IST" duration-ms="3690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open demo store home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home page smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:58:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:04 IST" duration-ms="5574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Newsletter subscription with random email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Newsletter & Contact-us"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:11 IST" duration-ms="6626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit Contact Us enquiry"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Newsletter & Contact-us"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:15 IST" duration-ms="4326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search shows results"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search & Currency"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:20 IST" duration-ms="4435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Change currency to Euro"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search & Currency"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:33 IST" duration-ms="13413" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a product to wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Wishlist, Compare and Cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wishlist is empty expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wishlist is empty expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at tests.LoginTest.loginTestValidCredentials1(LoginTest.java:29)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.testautomation.nopcommerce.steps.WishlistCompareCartSteps.wishlist_should_contain_at_least_one_item(WishlistCompareCartSteps.java:33)
+at ✽.wishlist should contain at least one item(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/wishlist_compare_cart.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTestValidCredentials1 -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@327514f]" started-at="2025-09-12T20:16:31 IST" name="logResult" finished-at="2025-09-12T20:16:31 IST" duration-ms="408" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:47 IST" duration-ms="13686" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTestValidCredentials1 status=FAILURE method=LoginTest.loginTestValidCredentials1()[pri:0, instance:tests.LoginTest@327514f] output={null}]]]>
+                <![CDATA["Add a product to compare list"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Wishlist, Compare and Cart"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logResult -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@327514f]" started-at="2025-09-12T20:16:31 IST" name="tearDownReport" finished-at="2025-09-12T20:16:32 IST" duration-ms="719" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T20:59:59 IST" duration-ms="11956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a product to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Wishlist, Compare and Cart"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- tests.LoginTest -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T20:59:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-12T21:00:12 IST" duration-ms="13280" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Remove a product from the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Wishlist, Compare and Cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.linkText: Shopping cart (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HEMANJ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63358}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63358/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e15a88dea7c03ef9e4b5b10b005e49e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Shopping cart (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HEMANJ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63358}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63358/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e15a88dea7c03ef9e4b5b10b005e49e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.testautomation.nopcommerce.pages.BasePage.click(BasePage.java:27)
+at com.testautomation.nopcommerce.pages.HomePage.openCart(HomePage.java:116)
+at com.testautomation.nopcommerce.steps.WishlistCompareCartSteps.i_remove_the_first_item_from_the_cart(WishlistCompareCartSteps.java:63)
+at ✽.I remove the first item from the cart(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/wishlist_compare_cart.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3]" started-at="2025-09-12T21:00:12 IST" name="tearDownClass" finished-at="2025-09-12T21:00:12 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testautomation.nopcommerce.runner.CucumberTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

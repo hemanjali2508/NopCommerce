@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 12 20:15:55 IST 2025</td>
+<td>Started on:</td><td>Fri Sep 12 20:57:56 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36614 ms)</td>
+<tr><td>Total time:</td><td>136 seconds (136524 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,75 +76,140 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTest.loginTestValidCredentials1()'><b>loginTestValidCredentials1</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: Login failed: Login was unsuccessful. Please correct the errors and try again.
-No customer account found expected [false] but found [true]
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to wishlist", "Wishlist, Compare and Cart"</td>
+<td><div><pre>java.lang.AssertionError: Wishlist is empty expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertFalse(Assert.java:79)
-	at tests.LoginTest.loginTestValidCredentials1(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1191863711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1191863711'><pre>java.lang.AssertionError: Login failed: Login was unsuccessful. Please correct the errors and try again.
-No customer account found expected [false] but found [true]
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.testautomation.nopcommerce.steps.WishlistCompareCartSteps.wishlist_should_contain_at_least_one_item(WishlistCompareCartSteps.java:33)
+	at ✽.wishlist should contain at least one item(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/wishlist_compare_cart.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2092080808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2092080808'><pre>java.lang.AssertionError: Wishlist is empty expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertFalse(Assert.java:79)
-	at tests.LoginTest.loginTestValidCredentials1(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.testautomation.nopcommerce.steps.WishlistCompareCartSteps.wishlist_should_contain_at_least_one_item(WishlistCompareCartSteps.java:33)
+	at ✽.wishlist should contain at least one item(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/wishlist_compare_cart.feature:6)
 </pre></div></td>
-<td>27</td>
-<td>tests.LoginTest@327514f</td></tr>
+<td>13</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort products by price Low to High", "Catalog navigation and product details"</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	var cannot be resolved to a type
+
+	at com.testautomation.nopcommerce.pages.CatalogPage.sortBy(CatalogPage.java:29)
+	at com.testautomation.nopcommerce.steps.CatalogSteps.i_sort_products_by(CatalogSteps.java:45)
+	at ✽.I sort products by &quot;Price: Low to High&quot;(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/catalog_navigation.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace81705968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81705968'><pre>java.lang.Error: Unresolved compilation problem: 
+	var cannot be resolved to a type
+
+	at com.testautomation.nopcommerce.pages.CatalogPage.sortBy(CatalogPage.java:29)
+	at com.testautomation.nopcommerce.steps.CatalogSteps.i_sort_products_by(CatalogSteps.java:45)
+	at ✽.I sort products by &quot;Price: Low to High&quot;(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/catalog_navigation.feature:15)
+</pre></div></td>
+<td>6</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from the cart", "Wishlist, Compare and Cart"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Shopping cart (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HEMANJ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63358}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63358/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e15a88dea7c03ef9e4b5b10b005e49e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.testautomation.nopcommerce.pages.BasePage.click(BasePage.java:27)
+	at com.testautomation.nopcommerce.pages.HomePage.openCart(HomePage.java:116)
+	at com.testautomation.nopcommerce.steps.WishlistCompareCartSteps.i_remove_the_first_item_from_the_cart(WishlistCompareCartSteps.java:63)
+	at ✽.I remove the first item from the cart(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/wishlist_compare_cart.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace365880880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365880880'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Shopping cart (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HEMANJ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63358}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63358/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e15a88dea7c03ef9e4b5b10b005e49e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.testautomation.nopcommerce.pages.BasePage.click(BasePage.java:27)
+	at com.testautomation.nopcommerce.pages.HomePage.openCart(HomePage.java:116)
+	at com.testautomation.nopcommerce.steps.WishlistCompareCartSteps.i_remove_the_first_item_from_the_cart(WishlistCompareCartSteps.java:63)
+	at ✽.I remove the first item from the cart(file:///C:/Users/HEMANJALI%20MULI/Desktop/NopCommerce/Capstoneproject/src/test/resources/features/wishlist_compare_cart.feature:17)
+</pre></div></td>
+<td>13</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search shows results", "Search & Currency"</td>
+<td></td>
+<td>4</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open Sitemap page", "Footer links"</td>
+<td></td>
+<td>5</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to Notebooks category", "Catalog navigation and product details"</td>
+<td></td>
+<td>9</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change currency to Euro", "Search & Currency"</td>
+<td></td>
+<td>4</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to compare list", "Wishlist, Compare and Cart"</td>
+<td></td>
+<td>13</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a new user then login back", "Register and Login"</td>
+<td></td>
+<td>21</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open demo store home page", "Home page smoke"</td>
+<td></td>
+<td>3</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Newsletter subscription with random email", "Newsletter & Contact-us"</td>
+<td></td>
+<td>5</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit Contact Us enquiry", "Newsletter & Contact-us"</td>
+<td></td>
+<td>6</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open Privacy notice page", "Footer links"</td>
+<td></td>
+<td>4</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open first product details", "Catalog navigation and product details"</td>
+<td></td>
+<td>10</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
+<tr>
+<td title='com.testautomation.nopcommerce.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.testautomation.nopcommerce.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to cart", "Wishlist, Compare and Cart"</td>
+<td></td>
+<td>11</td>
+<td>com.testautomation.nopcommerce.runner.CucumberTestRunner@38e79ae3</td></tr>
 </table><p>
 </body>
 </html>
